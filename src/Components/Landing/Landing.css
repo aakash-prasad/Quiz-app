@@ -1,0 +1,39 @@
+.Container{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 200px;
+  padding: 20px;
+}
+
+.FormSelect{
+  font-size: large;
+}
+
+.LabelTag{
+  font-size: xx-large;
+}
+
+.SubmitButton{
+  width: 30vw;
+  height: 10vh;
+  margin-top: 40px;
+  border-radius: 10px;
+  background-color: #224B00;
+  color: #fff;
+  font-size: large;
+  cursor: pointer;
+  transition: 1s;
+  
+}
+
+.SubmitButton:hover{
+  background-color: #39710B;
+  transform: scale(1.2, 1.1);
+}
+
+.Welcome{
+  color: #a64d79;
+}

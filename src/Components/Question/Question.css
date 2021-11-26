@@ -1,0 +1,74 @@
+.QuestionDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 180px;
+  background-color: #D38DAF;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 50px;
+  box-shadow: 0 10px 6px -6px#a64d79;
+}
+.SingleQuestion{
+  padding: 20px;
+}
+
+.buttons{
+  margin-top: 60px;
+}
+.PreviousButton{
+  width:fit-content;
+  height: fit-content;
+  padding:20px;
+  float: left;
+  margin-left: 20px;
+  background-color: #911100;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.5s;
+}
+.NextButton{
+  width:fit-content;
+  height: fit-content;
+  padding:20px;
+  float:right;
+  margin-right: 20px;
+  background-color: #0B7700;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.PreviousButton:hover{
+  transform: scale(1.2,1.1);
+  background-color: #B91B06;
+}
+.NextButton:hover{
+  transform: scale(1.2,1.1);
+  background-color:#139705;
+}
+
+.option1{
+  font-size: x-large;
+}
+
+.FinalButton{
+  width:fit-content;
+  height: fit-content;
+  padding:20px;
+  margin-right: 40vw;
+  margin-left: 40vw;
+  background-color: orange;
+  border-radius: 20px;
+  cursor: pointer;
+  color: black;
+  transition: 0.5s;
+}
+
+.FinalButton:hover{
+  transform: scale(1.2,1.1);
+  background-color:darkorange;
+}
