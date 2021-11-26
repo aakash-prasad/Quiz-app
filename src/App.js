@@ -9,6 +9,10 @@ function App() {
 
   const[diff, setDiff] = useState()
   const [currQ, setCurrQ]= useState([]);
+  let [correctOption, setCorrectOption] = useState([]);
+  let [selectedOption, setSelectedOption] = useState([-1,-1,-1,-1]);
+  
+
   // const [correctAns, setCorrectAns] = ([]);
   // const [correctAns, setCorrectAns] = ('');
 
@@ -27,7 +31,7 @@ function App() {
           path='/quiz'
           exact
           render={(props) => (
-          <Question {...props} diff={diff} currQ={currQ} setCurrQ={setCurrQ} />
+          <Question {...props} diff={diff} currQ={currQ} setCurrQ={setCurrQ} correctOption={correctOption} selectedOption={selectedOption} setSelectedOption={setSelectedOption} setCorrectOption={setCorrectOption} />
           )}
         />
 
@@ -35,7 +39,7 @@ function App() {
           path='/score'
           exact
           render={(props) => (
-          <Score  />
+          <Score  correctOption={correctOption} selectedOption={selectedOption} />
           )}
         />
         <Redirect to = "/" />
